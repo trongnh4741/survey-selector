@@ -1,29 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chọn loại khảo sát</title>
+<title>Khảo sát cán bộ</title>
+
 <style>
-    body { font-family: Arial; text-align: center; padding-top: 40px; }
-    .btn {
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        background: #fff;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    label {
+        font-weight: bold;
         display: block;
-        width: 250px;
-        margin: 15px auto;
-        padding: 15px;
+        margin-top: 15px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
         background: #1976d2;
         color: white;
-        text-decoration: none;
+        padding: 15px;
+        margin-top: 20px;
+        border: none;
         border-radius: 10px;
         font-size: 18px;
     }
+
+    @media (max-width: 480px) {
+        button {
+            font-size: 16px;
+            padding: 12px;
+        }
+    }
 </style>
 </head>
+
 <body>
-    <h2>Vui lòng chọn loại khảo sát</h2>
-    <a class="btn" href="LINK_FORM_1">Khảo sát 1</a>
-    <a class="btn" href="LINK_FORM_2">Khảo sát 2</a>
-    <a class="btn" href="LINK_FORM_3">Khảo sát 3</a>
+<div class="container">
+    <h2>Khảo sát cán bộ</h2>
+
+    <label>Họ và tên</label>
+    <input type="text">
+
+    <label>Chức vụ</label>
+    <select>
+        <option>Giao dịch viên</option>
+        <option>Cán bộ hỗ trợ</option>
+        <option>Quản lý</option>
+    </select>
+
+    <label>Ý kiến đánh giá</label>
+    <textarea rows="4"></textarea>
+
+    <button>Gửi khảo sát</button>
+</div>
 </body>
 </html>
-
